@@ -23,15 +23,6 @@ Poszczególne zadania rozwiązuj w odpowiednich plikach.
 **Repozytorium z ćwiczeniami zostanie usunięte 2 tygodnie po zakończeniu kursu. Spowoduje to też usunięcie wszystkich forków, które są zrobione z tego repozytorium.**
 
 
-## Zasady zaliczenia projektu końcowego
+# Warsztat
 
-- Użycie jednej z zaawansowanych bibliotek: React, Vue, Agular, Svelte, Three.js itd.
-- Projekt jest ostylowany w nowoczesny i dopracowany sposób
-- W projekcie wykorzystano: Sass lub StyledComponent lub MateriaUI (czy inny framework CSS)
-- Czy kod HTML jest semantyczny
-- Zastosowanie się do zasad Accessibility
-- Projekt zawiera formularz z kontrolowanymi polami
-- Aplikacja wysyła zapytania API z użyciem fetch bądź innej podobnej biblioteki
-- Na podstawie zewnętrznych danych budowana jest cała bądź część struktury aplikacji
-- Kursant na bieżąco uzupełniał repozytorium
-- Aplikacja jest dostępna w wersji Live (Firebase, Heroku, GitHub Pages itp.)
+Napisz aplikację `Todo` wraz z `TimeTrackerem`. Pełen opis zadania znajduje się w artykułach do tego warsztatu.
