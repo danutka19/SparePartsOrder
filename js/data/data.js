@@ -1,13 +1,4 @@
 export default [
-    {   capacity: 500,
-        type: "500W14",
-        power: "400V",
-        suspension: "CE",
-        name: "chain sprocket",
-        drawing: "1A",
-        number: 11,
-        price: 54
-    },
     {
         capacity: 500,
         type: "500W14",

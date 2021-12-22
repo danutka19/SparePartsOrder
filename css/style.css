@@ -2,9 +2,10 @@
     padding: 0;
     margin: 0;
     list-style: none;
+    box-sizing: border-box;
     color: black;
-    ;
 }
+
 .form {
     display: flex;
     flex-direction: column;
@@ -19,10 +20,6 @@ input, select {
 
 .hidden {
     display: none;
-}
-
-.btn {
-
 }
 
 .navigation {

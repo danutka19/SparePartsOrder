@@ -29,9 +29,11 @@ const HoistPage = ({onNewCapacity}) => {
     const handleBtn = (e) => {
         e.preventDefault();
         setBodyInput(true); //jak działa radio, tak aby jeden miał true/false?
-
-        createHoist(capacityInput, onNewCapacity);
-        console.log(`wyswietla hoist: ${capacityInput}`);
+        const hoist = {
+            capacityInput,
+        }
+        createHoist(hoist, onNewCapacity);
+        console.log(`wyswietla hoist/ capacityInput: ${capacityInput}`);
     }
 
     const clearBtn = (e) => {
