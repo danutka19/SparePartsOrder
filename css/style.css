@@ -26,3 +26,14 @@ input, select {
     padding: 10px 30px;
     font-size: 20px;
 }
+
+tr {
+    border: 2px solid green;
+}
+
+.input--quantity {
+    width: 80px;
+    background-color: white;
+    border: none;
+    text-align: center;
+}

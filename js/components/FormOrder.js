@@ -27,13 +27,17 @@ export const FormOrder = ({capacity, drawing, number}) => {
         e.preventDefault()
         setStatusOrder(true)
     }
+    const removeSpare = (e) => {
+        // e.preventDefault()
+        console.log("kliknales delete")
+    }
 
     return (
         <>
             <table className="table">
                 <thead>
                 <tr>
-                    <td>Line</td>
+                    <td>Line:</td>
                     <td>Hoist type:</td>
                     <td>Capacity:</td>
                     <td>Spare part number:</td>
@@ -56,9 +60,14 @@ export const FormOrder = ({capacity, drawing, number}) => {
                                 <td>{spare.number}</td>
                                 <td>{spare.name}</td>
                                 <td>{spare.price} EUR</td>
-                                <td>{quantity}</td>
+                                <td><input type="number" min="1"
+                                           placeholder="e.g. 2"
+                                           className="input--quantity"
+                                           onChange={e => e.target.value}
+
+                                /></td>
                                 <td>{spare.price * quantity} EUR</td>
-                                <td><i className="fas fa-trash"></i></td>
+                                <td onClick={removeSpare}><i className="fas fa-trash"></i></td>
                             </tr>
                         )
                     })}
