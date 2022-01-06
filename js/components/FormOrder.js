@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React, {Component, useEffect, useState} from "react";
 import {sparesParts} from "../data/datas";
 import {FetchCurrency} from "./FetchCurrency";
 
@@ -18,10 +18,12 @@ export const FormOrder = ({capacity, drawing, number}) => {
     const [spares, setSpares] = useState([])
     const [quantity, setQuantity] = useState(3)
     const [sum, setSum] = useState("")
+    const [serialNumber, setSerialNumber] = useState("")
 
     useEffect(() => {
         setSpares(sparesParts.filter((spare) => capacity === spare.capacity && drawing === spare.drawing));
-        sumOrder()
+        sumOrder();
+
     }, [])
 
     const sendOrder = (e) => {
@@ -29,7 +31,6 @@ export const FormOrder = ({capacity, drawing, number}) => {
         setStatusOrder(true)
     }
     const removeSpare = (index) => {
-        // e.preventDefault()
         // funkcja usuwająca pozycję z koszyka
         console.log("kliknales delete")
     setSpares((prev) => prev.filter(spares => spares.index !== index))  // nie chce usuwać
@@ -43,6 +44,11 @@ export const FormOrder = ({capacity, drawing, number}) => {
             .reduce((prev, curr) => {
                 return prev + curr
             }))
+    }
+
+    const handleInpSerial = (e) => {
+        setSerialNumber(e.target.value);
+        console.log(serialNumber);
     }
 
     return (
@@ -97,11 +103,14 @@ export const FormOrder = ({capacity, drawing, number}) => {
                     <td> {sum}<i className="fas fa-euro-sign"></i> </td>
                 </tr>
                 </tfoot>
-
             </table>
             <form action="" onSubmit={sendOrder}>
                 <label>Write serial number of hoist:
-                    <input type="text" onChange={e => e.target.value} placeholder={"e.g. 79797"}/>
+                    <input type="text"
+                           maxLength="6"
+                           value={serialNumber}
+                           onChange={handleInpSerial}
+                           placeholder={"e.g. 79797"}/>
                 </label>
                 <FetchCurrency />
                 <div>Order value: {sum}<i className="fas fa-euro-sign"></i></div>
