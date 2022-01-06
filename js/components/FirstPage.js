@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from "react";
 import {BodyPage} from "./BodyPage";
 import HoistPage from "./HoistPage";
-import data from "../data/data";
+import data from "../data/dataW";
 
 const FirstPage = () => {
     const [spares, setSpares] = useState({data})

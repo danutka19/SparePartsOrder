@@ -34,7 +34,7 @@ const App = () => {
             </nav>
             <Routes>
                 <Route path="/" element={<HoistPage onNewCapacity={addNewCapacity} />} />
-                <Route path="order" element={<FormOrder drawing="1A" number={6} capacity={500} />} />
+                <Route path="order" element={<FormOrder drawing="3A" number={6} capacity={3000} />} />
             </Routes>
         </>
     )

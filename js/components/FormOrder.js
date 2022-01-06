@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from "react";
-import data from "../data/data";
+import {sparesParts} from "../data/datas";
+import {FetchCurrency} from "./FetchCurrency";
 
 // const [spare, setSpare] = useState({
 //     capacity: 500,
@@ -14,22 +15,34 @@ import data from "../data/data";
 
 export const FormOrder = ({capacity, drawing, number}) => {
     const [statusOrder, setStatusOrder] = useState(false)
-    const [spares, setSpares] = useState(data)
+    const [spares, setSpares] = useState([])
     const [quantity, setQuantity] = useState(3)
+    const [sum, setSum] = useState("")
 
     useEffect(() => {
-        console.log("Status order to: ");
-        console.log(statusOrder); //tu juz aktualny stan
-
+        setSpares(sparesParts.filter((spare) => capacity === spare.capacity && drawing === spare.drawing));
+        sumOrder()
     }, [])
 
     const sendOrder = (e) => {
         e.preventDefault()
         setStatusOrder(true)
     }
-    const removeSpare = (e) => {
+    const removeSpare = (index) => {
         // e.preventDefault()
+        // funkcja usuwająca pozycję z koszyka
         console.log("kliknales delete")
+    setSpares((prev) => prev.filter(spares => spares.index !== index))  // nie chce usuwać
+    }
+
+    const sumOrder = () => {
+        setSum(sparesParts.filter((spare) => capacity === spare.capacity && drawing === spare.drawing)
+            .map(el => {
+                return el.price*quantity
+            })
+            .reduce((prev, curr) => {
+                return prev + curr
+            }))
     }
 
     return (
@@ -49,9 +62,7 @@ export const FormOrder = ({capacity, drawing, number}) => {
                 </tr>
                 </thead>
                 <tbody>
-                {spares.filter((spare) => capacity === spare.capacity && drawing === spare.drawing)
-                    // dodać po numerze częsci number === spare.number
-                    .map((spare, index) => {
+                {spares.map((spare, index) => {
                         return (
                             <tr key={index}>
                                 <td>{index + 1}</td>
@@ -59,14 +70,16 @@ export const FormOrder = ({capacity, drawing, number}) => {
                                 <td>{spare.capacity} kg</td>
                                 <td>{spare.number}</td>
                                 <td>{spare.name}</td>
-                                <td>{spare.price} EUR</td>
+                                <td>{spare.price} <i className="fas fa-euro-sign"></i></td>
                                 <td><input type="number" min="1"
                                            placeholder="e.g. 2"
                                            className="input--quantity"
                                            onChange={e => e.target.value}
 
-                                /></td>
-                                <td>{spare.price * quantity} EUR</td>
+                                />{quantity}</td>
+                                {/*// usunac {quantity} pozniej*/}
+                                <td>{spare.price * quantity} <i className="fas fa-euro-sign"></i></td>
+                                {/*nalezy zmodyfikować ilość, aby się uaktualniała*/}
                                 <td onClick={removeSpare}><i className="fas fa-trash"></i></td>
                             </tr>
                         )
@@ -80,8 +93,8 @@ export const FormOrder = ({capacity, drawing, number}) => {
                     <td> </td>
                     <td> </td>
                     <td> </td>
-                    <td>Order value: </td>
-                    <td> SUMA </td>
+                    <td>Order value:</td>
+                    <td> {sum}<i className="fas fa-euro-sign"></i> </td>
                 </tr>
                 </tfoot>
 
@@ -90,6 +103,8 @@ export const FormOrder = ({capacity, drawing, number}) => {
                 <label>Write serial number of hoist:
                     <input type="text" onChange={e => e.target.value} placeholder={"e.g. 79797"}/>
                 </label>
+                <FetchCurrency />
+                <div>Order value: {sum}<i className="fas fa-euro-sign"></i></div>
                 <button>Send order</button>
             </form>
         </>
