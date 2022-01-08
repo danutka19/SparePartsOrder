@@ -2,28 +2,34 @@ import React, {useEffect, useState} from "react";
 import ReactDOM from "react-dom";
 import {FormOrder} from "./components/FormOrder";
 import HoistPage from "./components/HoistPage";
-import {createHoist} from "./data/createHoist";
 import {BodyPage} from "./components/BodyPage";
 import { Routes, Route, Link, BrowserRouter } from "react-router-dom";
+import { sparesParts} from "./data/datas";
 
 const App = () => {
-    const [capacityX, setCapacityX] = useState(2000)
-    const [type, setType] = useState("");
-    const [drawing, setDrawing] = useState("2A");
+    const [capacityX, setCapacityX] = useState(500);
+    const [drawing, setDrawing] = useState("1A");
+    const [spares, setSpares] = useState([]);
     const [number, setNumber] = useState("");
+    const [type, setType] = useState("");
 
     useEffect(() => {
-        // setCapacityX(addNewCapacity(capacity))
-        // setDrawing(photo => addNewCapacity(photo))
-        console.log(`useEffect: ${capacityX}`)
-        console.log(`useEffect: ${drawing}`)
+        setSpares(sparesParts.filter(spares => {
+            return spares.drawing === drawing && spares.capacity === +capacityX
+        }));
+        console.log(`useEffect: ${capacityX}`);
+        console.log(`useEffect: ${drawing}`);
+    }, [capacityX, drawing])
 
-    }, [capacityX]);
+    useEffect(() => {
+        console.log(`useEffect: `, spares);
+    }, [spares])
 
-    const addNewCapacity = (capacity) => {
+    const addNewCapacity = (capacity, drawing) => {
         setCapacityX(capacity);
-        console.log(`chce wyswietlic ${capacityX} `)
-        console.log(capacity);
+        setDrawing(drawing);
+        console.log(`addNewCapacity ${drawing} `);
+        console.log(`addNewCapacity ${capacity}`);
     }
 
     return (
@@ -41,9 +47,8 @@ const App = () => {
             </nav>
             <Routes>
                 <Route path="/" element={<HoistPage onNewCapacity={addNewCapacity} />} />
-                {/*BodyPage i FormOrder pobieraja ze stanu app swoje props, oprócz number, ale to wkrótce:*/}
                 <Route path="drawing" element={<BodyPage drawingP={drawing} capacityP={capacityX} />} />
-                <Route path="order" element={<FormOrder drawing={drawing} number={6} capacity={capacityX} />} />
+                <Route path="order" element={<FormOrder sparesP={spares} />} />
             </Routes>
         </>
     )

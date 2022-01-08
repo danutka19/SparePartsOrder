@@ -214,7 +214,7 @@ export default [
         power: "400V",
         suspension: "CS",
         name: "aluminium panel cover",
-        drawing: "2A",
+        drawing: "1A",
         number: 1,
         price: 120,
         id: 10001
@@ -226,7 +226,7 @@ export default [
         power: "400V",
         suspension: "CS",
         name: "electrical panel L.T. 24V",
-        drawing: "2A",
+        drawing: "1A",
         number: 2,
         price: 36,
         id: 10002
@@ -237,7 +237,7 @@ export default [
         power: "400V",
         suspension: "CS",
         name: "electric aluminium reduction gear flange",
-        drawing: "2A",
+        drawing: "1A",
         number: 3,
         price: 135,
         id: 10003
@@ -248,7 +248,7 @@ export default [
         power: "400V",
         suspension: "CS",
         name: "pinion",
-        drawing: "2A",
+        drawing: "1A",
         number: 4,
         price: 235,
         id: 10004
@@ -259,7 +259,7 @@ export default [
         power: "400V",
         suspension: "CS",
         name: "clutch gear",
-        drawing: "2A",
+        drawing: "1A",
         number: 5,
         price: 185,
         id: 10005
@@ -270,7 +270,7 @@ export default [
         power: "400V",
         suspension: "CS",
         name: "gear pinion clutch",
-        drawing: "2A",
+        drawing: "1A",
         number: 6,
         price: 199,
         id: 10006
@@ -281,7 +281,7 @@ export default [
         power: "400V",
         suspension: "CS",
         name: "complete clutch system",
-        drawing: "2A",
+        drawing: "1A",
         number: 7,
         price: 269,
         id: 10007
@@ -292,7 +292,7 @@ export default [
         power: "400V",
         suspension: "CS",
         name: "flange double gear",
-        drawing: "2A",
+        drawing: "1A",
         number: 8,
         price: 59,
         id: 10008
@@ -303,7 +303,7 @@ export default [
         power: "400V",
         suspension: "CS",
         name: "double gear",
-        drawing: "2A",
+        drawing: "1A",
         number: 9,
         price: 159,
         id: 10009
@@ -314,7 +314,7 @@ export default [
         power: "400V",
         suspension: "CS",
         name: "chain sprocket",
-        drawing: "2A",
+        drawing: "1A",
         number: 10,
         price: 66,
         id: 10010
@@ -325,7 +325,7 @@ export default [
         power: "400V",
         suspension: "CS",
         name: "aluminium central body",
-        drawing: "2A",
+        drawing: "1A",
         number: 11,
         price: 86,
         id: 10011
@@ -336,7 +336,7 @@ export default [
         power: "400V",
         suspension: "CS",
         name: "eyebolt suspension",
-        drawing: "2A",
+        drawing: "1A",
         number: 12,
         price: 286,
         id: 10012
@@ -347,7 +347,7 @@ export default [
         power: "400V",
         suspension: "CS",
         name: "motor shaft",
-        drawing: "2A",
+        drawing: "1A",
         number: 13,
         price: 286,
         id: 10013
@@ -358,7 +358,7 @@ export default [
         power: "400V",
         suspension: "CS",
         name: "stator complete of aluminium case",
-        drawing: "2A",
+        drawing: "1A",
         number: 14,
         price: 145,
         id: 10014
@@ -369,7 +369,7 @@ export default [
         power: "400V",
         suspension: "CS",
         name: "brake disc",
-        drawing: "2A",
+        drawing: "1A",
         number: 15,
         price: 25,
         id: 10015
@@ -380,7 +380,7 @@ export default [
         power: "400V",
         suspension: "CS",
         name: "electromagnet brake AC4",
-        drawing: "2A",
+        drawing: "1A",
         number: 16,
         price: 125,
         id: 10016
@@ -391,7 +391,7 @@ export default [
         power: "400V",
         suspension: "CS",
         name: "aluminium brake cover",
-        drawing: "2A",
+        drawing: "1A",
         number: 17,
         price: 28,
         id: 10017
@@ -402,7 +402,7 @@ export default [
         power: "400V",
         suspension: "CS",
         name: "upper/ lower limits switch",
-        drawing: "2A",
+        drawing: "1A",
         number: 18,
         price: 5,
         id: 10018
@@ -413,7 +413,7 @@ export default [
         power: "400V",
         suspension: "CS",
         name: "complete bottom block",
-        drawing: "2A",
+        drawing: "1A",
         number: 19,
         price: 68,
         id: 10019

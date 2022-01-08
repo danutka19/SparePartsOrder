@@ -1,35 +1,19 @@
 import React, {Component, useEffect, useState} from "react";
-import {sparesParts} from "../data/datas";
 import {FetchCurrency} from "./FetchCurrency";
 
-// const [spare, setSpare] = useState({
-//     capacity: 500,
-//     type: "500W14",
-//     power: "400V",
-//     suspension: "CE",
-//     name: "chain sprocket",
-//     drawing: "1A",
-//     number: 11,
-//     price: 54,
-//     id: 511
-// })
-
-export const FormOrder = ({capacity, drawing, number}) => {
-    const [statusOrder, setStatusOrder] = useState(false)
-    const [spares, setSpares] = useState([])
+export const FormOrder = ({sparesP}) => {
+    const [spares, setSpares] = useState(sparesP)
     const [quantity, setQuantity] = useState([1])
     const [sum, setSum] = useState("")
     const [serialNumber, setSerialNumber] = useState("")
+    const [currency, setCurrency] = useState(4.57)//tu stan i funcDoZmiany
+    const [statusOrder, setStatusOrder] = useState(false)
 
     useEffect(() => {
-        setSpares(sparesParts.filter((spare) => capacity === spare.capacity && drawing === spare.drawing));
-        setSum(sparesParts.filter((spare) => capacity === spare.capacity && drawing === spare.drawing)
-            .map(el => {
-                return el.price*quantity
-            })
-            .reduce((prev, curr) => {
-                return prev + curr
-            }))
+        setSum(sparesP
+            .map(el => el.price*quantity)
+            .reduce((prev, curr) => prev + curr));
+        console.log(sum, `=+=+=`)
     }, [])
 
     // funkcja dzięki której chciałabym wysłać dane do mnie na email
@@ -38,11 +22,12 @@ export const FormOrder = ({capacity, drawing, number}) => {
         setStatusOrder(true)
     }
 
-    // funkcja usuwająca pozycję z koszyka i sumująca wszystkie pozycje po usunięciu po id
+    // funkcja usuwająca pozycję z koszyka i sumująca wszystkie usunięte pozycje po id
     const removeSpare = (id) => () => {
         setSpares((prev) => prev.filter(spares => spares.id !== id))  // usuwa pozycje z koszyka
         const x = spares.filter(s => s.id === id).map(el => el.price * quantity)
         setSum(prev => prev - x);
+        console.log(spares, `log removeSpare`)
     }
 
     const handleInpSerial = (e) => {
@@ -100,7 +85,7 @@ export const FormOrder = ({capacity, drawing, number}) => {
                     <td> </td>
                     <td>Order value:</td>
                     <td>
-                        {sum}
+                        {/*{sum}*/}
                         <i className="fas fa-euro-sign"></i>
                     </td>
                 </tr>
@@ -114,7 +99,7 @@ export const FormOrder = ({capacity, drawing, number}) => {
                            onChange={handleInpSerial}
                            placeholder={"e.g. 79797"}/>
                 </label>
-                <FetchCurrency />
+                <FetchCurrency /> //w propsach przekazujemy foo funcDoZmiany
                 <div>Order value: {sum}<i className="fas fa-euro-sign"></i></div>
                 <div>Order value: {sum}</div>
                 <button>Send order</button>

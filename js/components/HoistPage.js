@@ -1,29 +1,43 @@
 import React, {useState, useEffect} from "react";
 import {createHoist} from "../data/createHoist";
+import {sparesParts} from "../data/datas";
+import {useNavigate} from 'react-router-dom'
 
 const HoistPage = ({onNewCapacity}) => {
     const [capacityInput, setCapacityInput] = useState("");
     const [typeInput, setTypeInput] = useState("");
     const [powerInput, setPowerInput] = useState("");
     const [suspensionInput, setSuspensionInput] = useState("CS");
+    const navigate = useNavigate()
     const [bodyInput, setBodyInput] = useState(true); // body=true trolley=false, potem wyswietli odpowiedni rysunek body/trolley, domyslnie body
-    const [firstDisplay, setFirstDisplay] = useState(false);
-    const [photoNumber, setPhotoNumber] = useState("")
 
     const handleBtn = (e) => {
         e.preventDefault();
         setBodyInput(true);
-        setFirstDisplay(true);
-        console.log(`wyswietla hoist/ capacityInput: ${capacityInput} oraz ${photoNumber}`);
-        // onNewCapacity(capacityInput);
-        onNewCapacity(capacityInput);
+        onNewCapacity(capacityInput, setDrawingNumber());
+        console.log(`zwrot z formularza w HoistPage ${setDrawingNumber()} oraz ${capacityInput}`)
+        navigate('/drawing')
+
+    }
+// wybiera nr rysunku, która ma sie pokazać w BodyPage i jakie pozycje nr części do FormOrder
+    const setDrawingNumber = () => {
+        if (capacityInput <= 500 && capacityInput > 0 ) {
+            return "1A"
+        } else if (capacityInput <= 2000 && capacityInput > 500) {
+            return "2A"
+        } else if (capacityInput <= 5000 && capacityInput > 2000 ) {
+            return "3A"
+        } else if (capacityInput === 0 ) {
+            return "4B"
+        } else if (capacityInput > 5000 ) {
+            console.warn("Podaj udźwig pomiędzy 125kg a 5000kg")
+        }
     }
 
     const clearBtn = (e) => {
         e.preventDefault();
         setCapacityInput("");
         setBodyInput(true);
-        setPhotoNumber("");
     }
 
     const handleSuspensionChange = (e) => {
@@ -36,10 +50,10 @@ const HoistPage = ({onNewCapacity}) => {
 
     return (
         <>
-            <div className={firstDisplay ? "hidden" : ""}>
+            <div >
                 <h3>Choose your chain hoist:</h3>
                 <p>Please fill below datas to find neccessary spare(s)</p>
-                <form action="" className="form" >
+                <form action="" className="form" onSubmit={handleBtn}>
                     <label>Capacity:
                         <input type="text" onChange={e => setCapacityInput(e.target.value)} value={capacityInput} placeholder="e.g. 500" />[kg]
                     </label>
@@ -64,7 +78,7 @@ const HoistPage = ({onNewCapacity}) => {
                     <label>Trolley
                         <input type="radio" name="body" onChange={handleBodyChange} value={false}/>
                     </label>
-                    <button onClick={handleBtn}>Send</button>
+                    <button>Send</button>
                     <button onClick={clearBtn}>Clear form</button>
                 </form>
             </div>

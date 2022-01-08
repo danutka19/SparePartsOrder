@@ -1,13 +1,12 @@
 import {useEffect, useState} from "react";
 import React from "react";
 
-const API = `http://api.nbp.pl/api/exchangerates/rates/A/EUR/today/`
+// const API = `http://api.nbp.pl/api/exchangerates/rates/A/EUR/today/`
+const API = `http://api.nbp.pl/api/exchangerates/rates/A/EUR/2022-01-07/`
 const nbp = `http://api.nbp.pl/api/`
 
-// na dzien dzisiejszy
-// http://api.nbp.pl/api/exchangerates/tables/{table}/today/
 
-export const FetchCurrency = () => {
+export const FetchCurrency = ({foo}) => {
     const [currency, setCurrency] = useState(false);
 
     useEffect(() => {
@@ -20,7 +19,7 @@ export const FetchCurrency = () => {
                 throw new Error('Błąd sieci!');
         }).then( currency => {
             console.log('Kurs waluty:', currency);
-            setCurrency(currency)
+            foo(currency)
         }).catch( err => {
             console.log('Błąd!', err);
         });

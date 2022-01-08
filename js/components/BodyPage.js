@@ -36,14 +36,14 @@ export const BodyPage = ({drawingP, capacityP}) => {
             console.warn("Podaj udźwig pomiędzy 125kg a 5000kg")
             prompt("Please change capacity max 5000kg")
         }
-
     }, [])
 
     const handleBasketBtn = (e) => {
         e.preventDefault();
         setCapacity(capacityP);
+        // setDrawing(drawingP);
         console.log(capacity);
-        console.log(number);
+        console.log(drawing);
     }
 
     const handleInpNumber = (e) => {
