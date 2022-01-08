@@ -7,7 +7,8 @@ export default [
         name: "aluminium cover",
         drawing: "3A",
         number: 1,
-        price: 120
+        price: 120,
+        id: 3001
 
     },
     {
@@ -18,7 +19,8 @@ export default [
         name: "stator with aluminium case",
         drawing: "3A",
         number: 2,
-        price: 360
+        price: 360,
+        id: 3002
     },
     {
         capacity: 3000,
@@ -28,7 +30,8 @@ export default [
         name: "driving shaft + rotor",
         drawing: "3A",
         number: 3,
-        price: 135
+        price: 135,
+        id: 3003
     },
     {
         capacity: 3000,
@@ -38,7 +41,8 @@ export default [
         name: "central body (motor side)",
         drawing: "3A",
         number: 4,
-        price: 635
+        price: 635,
+        id: 3004
     },
     {
         capacity: 3000,
@@ -48,7 +52,8 @@ export default [
         name: "eyebolt suspension",
         drawing: "3A",
         number: 5,
-        price: 85
+        price: 85,
+        id: 3005
     },
     {
         capacity: 3000,
@@ -58,7 +63,8 @@ export default [
         name: "chain sprocket",
         drawing: "3A",
         number: 6,
-        price: 99
+        price: 99,
+        id: 3006
     },
     {
         capacity: 3000,
@@ -68,7 +74,8 @@ export default [
         name: "central body (reduction gear side)",
         drawing: "3A",
         number: 7,
-        price: 369
+        price: 369,
+        id: 3007
     },
     {
         capacity: 3000,
@@ -78,7 +85,8 @@ export default [
         name: "steel chain block",
         drawing: "3A",
         number: 8,
-        price: 49
+        price: 49,
+        id: 3008
     },
     {
         capacity: 3000,
@@ -88,7 +96,8 @@ export default [
         name: "clutch kit",
         drawing: "3A",
         number: 9,
-        price: 159
+        price: 159,
+        id: 3009
     },
     {
         capacity: 3000,
@@ -98,7 +107,8 @@ export default [
         name: "clutch gear",
         drawing: "3A",
         number: 10,
-        price: 166
+        price: 166,
+        id: 3010
     },
     {
         capacity: 3000,
@@ -108,7 +118,8 @@ export default [
         name: "gear",
         drawing: "3A",
         number: 11,
-        price: 386
+        price: 386,
+        id: 3011
     },
     {
         capacity: 3000,
@@ -118,7 +129,8 @@ export default [
         name: "clutch shaft",
         drawing: "3A",
         number: 12,
-        price: 286
+        price: 286,
+        id: 3012
     },
     {
         capacity: 3000,
@@ -128,7 +140,8 @@ export default [
         name: "eduble gear",
         drawing: "3A",
         number: 13,
-        price: 415
+        price: 415,
+        id: 3013
     },
     {
         capacity: 3000,
@@ -138,7 +151,8 @@ export default [
         name: "aluminium gear case",
         drawing: "3A",
         number: 14,
-        price: 623
+        price: 623,
+        id: 3014
     },
     {
         capacity: 3000,
@@ -148,7 +162,8 @@ export default [
         name: "iron disc",
         drawing: "3A",
         number: 15,
-        price: 85
+        price: 85,
+        id: 3015
     },
     {
         capacity: 3000,
@@ -158,7 +173,8 @@ export default [
         name: "brake disc",
         drawing: "3A",
         number: 16,
-        price: 225
+        price: 225,
+        id: 3016
     },
     {
         capacity: 3000,
@@ -168,7 +184,8 @@ export default [
         name: "electromagnetic coil 400VAC",
         drawing: "3A",
         number: 17,
-        price: 158
+        price: 158,
+        id: 3017
     },
     {
         capacity: 3000,
@@ -178,7 +195,8 @@ export default [
         name: "electrical panel",
         drawing: "3A",
         number: 18,
-        price: 395
+        price: 395,
+        id: 3018
     },
     {
         capacity: 3000,
@@ -188,7 +206,8 @@ export default [
         name: "kit transformer + fuses",
         drawing: "3A",
         number: 19,
-        price: 175
+        price: 175,
+        id: 3019
     },
     {
         capacity: 3000,
@@ -198,7 +217,8 @@ export default [
         name: "aluminium panel cover",
         drawing: "3A",
         number: 20,
-        price: 275
+        price: 275,
+        id: 3020
     },
     {
         capacity: 3000,
@@ -208,7 +228,8 @@ export default [
         name: "pendant cable",
         drawing: "3A",
         number: 21,
-        price: 7
+        price: 7,
+        id: 3021
     },
     {
         capacity: 3000,
@@ -218,7 +239,8 @@ export default [
         name: "pendant",
         drawing: "3A",
         number: 22,
-        price: 87
+        price: 87,
+        id: 3022
     },
     {
         capacity: 3000,
@@ -228,7 +250,8 @@ export default [
         name: "bottom sprocket",
         drawing: "3A",
         number: 23,
-        price: 95
+        price: 95,
+        id: 3023
     },
     {
         capacity: 3000,
@@ -238,7 +261,8 @@ export default [
         name: "bottom block",
         drawing: "3A",
         number: 24,
-        price: 35
+        price: 35,
+        id: 3024
     },
     {
         capacity: 3000,
@@ -248,7 +272,8 @@ export default [
         name: "load hook",
         drawing: "3A",
         number: 25,
-        price: 87
+        price: 87,
+        id: 3025
     },
     {
         capacity: 3000,
@@ -258,7 +283,8 @@ export default [
         name: "upper / lower limit kit",
         drawing: "3A",
         number: 26,
-        price: 135
+        price: 135,
+        id: 3026
     },
     {
         capacity: 3000,
@@ -268,7 +294,8 @@ export default [
         name: "plastic fan",
         drawing: "3A",
         number: 27,
-        price: 225
+        price: 225,
+        id: 3027
     },
     {
         capacity: 4000,
@@ -278,7 +305,8 @@ export default [
         name: "aluminium cover",
         drawing: "3A",
         number: 1,
-        price: 120
+        price: 120,
+        id: 4001
 
     },
     {
@@ -289,7 +317,8 @@ export default [
         name: "stator with aluminium case",
         drawing: "3A",
         number: 2,
-        price: 360
+        price: 360,
+        id: 4002
     },
     {
         capacity: 4000,
@@ -299,7 +328,8 @@ export default [
         name: "driving shaft + rotor",
         drawing: "3A",
         number: 3,
-        price: 135
+        price: 135,
+        id: 4003
     },
     {
         capacity: 4000,
@@ -309,7 +339,8 @@ export default [
         name: "central body (motor side)",
         drawing: "3A",
         number: 4,
-        price: 635
+        price: 635,
+        id: 4004
     },
     {
         capacity: 4000,
@@ -319,7 +350,8 @@ export default [
         name: "eyebolt suspension",
         drawing: "3A",
         number: 5,
-        price: 85
+        price: 85,
+        id: 4005
     },
     {
         capacity: 4000,
@@ -329,7 +361,8 @@ export default [
         name: "chain sprocket",
         drawing: "3A",
         number: 6,
-        price: 99
+        price: 99,
+        id: 4006
     },
     {
         capacity: 4000,
@@ -339,7 +372,8 @@ export default [
         name: "central body (reduction gear side)",
         drawing: "3A",
         number: 7,
-        price: 369
+        price: 369,
+        id: 4007
     },
     {
         capacity: 4000,
@@ -349,7 +383,8 @@ export default [
         name: "steel chain block",
         drawing: "3A",
         number: 8,
-        price: 49
+        price: 49,
+        id: 4008
     },
     {
         capacity: 4000,
@@ -359,7 +394,8 @@ export default [
         name: "clutch kit",
         drawing: "3A",
         number: 9,
-        price: 159
+        price: 159,
+        id: 4009
     },
     {
         capacity: 4000,
@@ -369,7 +405,8 @@ export default [
         name: "clutch gear",
         drawing: "3A",
         number: 10,
-        price: 166
+        price: 166,
+        id: 4010
     },
     {
         capacity: 4000,
@@ -379,7 +416,8 @@ export default [
         name: "gear",
         drawing: "3A",
         number: 11,
-        price: 386
+        price: 386,
+        id: 4011
     },
     {
         capacity: 4000,
@@ -389,7 +427,8 @@ export default [
         name: "clutch shaft",
         drawing: "3A",
         number: 12,
-        price: 286
+        price: 286,
+        id: 4012
     },
     {
         capacity: 4000,
@@ -399,7 +438,8 @@ export default [
         name: "eduble gear",
         drawing: "3A",
         number: 13,
-        price: 415
+        price: 415,
+        id: 4013
     },
     {
         capacity: 4000,
@@ -409,7 +449,8 @@ export default [
         name: "aluminium gear case",
         drawing: "3A",
         number: 14,
-        price: 623
+        price: 623,
+        id: 4014
     },
     {
         capacity: 4000,
@@ -419,7 +460,8 @@ export default [
         name: "iron disc",
         drawing: "3A",
         number: 15,
-        price: 85
+        price: 85,
+        id: 4015
     },
     {
         capacity: 4000,
@@ -429,7 +471,8 @@ export default [
         name: "brake disc",
         drawing: "3A",
         number: 16,
-        price: 225
+        price: 225,
+        id: 4016
     },
     {
         capacity: 4000,
@@ -439,7 +482,8 @@ export default [
         name: "electromagnetic coil 400VAC",
         drawing: "3A",
         number: 17,
-        price: 158
+        price: 158,
+        id: 4017
     },
     {
         capacity: 4000,
@@ -449,7 +493,8 @@ export default [
         name: "electrical panel",
         drawing: "3A",
         number: 18,
-        price: 395
+        price: 395,
+        id: 4018
     },
     {
         capacity: 4000,
@@ -459,7 +504,8 @@ export default [
         name: "kit transformer + fuses",
         drawing: "3A",
         number: 19,
-        price: 175
+        price: 175,
+        id: 4019
     },
     {
         capacity: 4000,
@@ -469,7 +515,8 @@ export default [
         name: "aluminium panel cover",
         drawing: "3A",
         number: 20,
-        price: 275
+        price: 275,
+        id: 4020
     },
     {
         capacity: 4000,
@@ -479,7 +526,8 @@ export default [
         name: "pendant cable",
         drawing: "3A",
         number: 21,
-        price: 7
+        price: 7,
+        id: 4021
     },
     {
         capacity: 4000,
@@ -489,7 +537,8 @@ export default [
         name: "pendant",
         drawing: "3A",
         number: 22,
-        price: 87
+        price: 87,
+        id: 4022
     },
     {
         capacity: 4000,
@@ -499,7 +548,8 @@ export default [
         name: "bottom sprocket",
         drawing: "3A",
         number: 23,
-        price: 95
+        price: 95,
+        id: 4023
     },
     {
         capacity: 4000,
@@ -509,7 +559,8 @@ export default [
         name: "bottom block",
         drawing: "3A",
         number: 24,
-        price: 35
+        price: 35,
+        id: 4024
     },
     {
         capacity: 4000,
@@ -519,7 +570,8 @@ export default [
         name: "load hook",
         drawing: "3A",
         number: 25,
-        price: 87
+        price: 87,
+        id: 4025
     },
     {
         capacity: 4000,
@@ -529,7 +581,8 @@ export default [
         name: "upper / lower limit kit",
         drawing: "3A",
         number: 26,
-        price: 120
+        price: 120,
+        id: 4026
     },
     {
         capacity: 4000,
@@ -539,6 +592,7 @@ export default [
         name: "plastic fan",
         drawing: "3A",
         number: 27,
-        price: 120
+        price: 120,
+        id: 4027
     },
 ]

@@ -7,8 +7,8 @@ export default [
         name: "plastic box",
         drawing: "1A",
         number: 1,
-        price: 120
-
+        price: 120,
+        id: 501
     },
     {
         capacity: 500,
@@ -18,7 +18,8 @@ export default [
         name: "electrical panel L.T. 24V",
         drawing: "1A",
         number: 2,
-        price: 36
+        price: 36,
+        id: 502
     },
     {
         capacity: 500,
@@ -28,7 +29,8 @@ export default [
         name: "aluminium motor cover",
         drawing: "1A",
         number: 3,
-        price: 135
+        price: 135,
+        id: 503
     },
     {
         capacity: 500,
@@ -38,7 +40,8 @@ export default [
         name: "complete brake system D. 100/220 VDC",
         drawing: "1A",
         number: 4,
-        price: 235
+        price: 235,
+        id: 504
     },
     {
         capacity: 500,
@@ -48,7 +51,8 @@ export default [
         name: "motor case",
         drawing: "1A",
         number: 5,
-        price: 185
+        price: 185,
+        id: 505
     },
     {
         capacity: 500,
@@ -58,7 +62,8 @@ export default [
         name: "stator",
         drawing: "1A",
         number: 6,
-        price: 199
+        price: 199,
+        id: 506
     },
     {
         capacity: 500,
@@ -68,7 +73,8 @@ export default [
         name: "motor shaft",
         drawing: "1A",
         number: 7,
-        price: 269
+        price: 269,
+        id: 507
     },
     {
         capacity: 500,
@@ -78,7 +84,8 @@ export default [
         name: "eyebolt suspension",
         drawing: "1A",
         number: 8,
-        price: 59
+        price: 59,
+        id: 508
     },
     {
         capacity: 500,
@@ -88,7 +95,8 @@ export default [
         name: "aluminium central body",
         drawing: "1A",
         number: 9,
-        price: 159
+        price: 159,
+        id: 509
     },
     {
         capacity: 500,
@@ -98,7 +106,8 @@ export default [
         name: "ring gear",
         drawing: "1A",
         number: 10,
-        price: 66
+        price: 66,
+        id: 510
     },
     {
         capacity: 500,
@@ -108,7 +117,8 @@ export default [
         name: "chain sprocket",
         drawing: "1A",
         number: 11,
-        price: 86
+        price: 86,
+        id: 511
     },
     {
         capacity: 500,
@@ -118,7 +128,8 @@ export default [
         name: "complete reduction gear",
         drawing: "1A",
         number: 12,
-        price: 286
+        price: 286,
+        id: 512
     },
     {
         capacity: 500,
@@ -128,7 +139,8 @@ export default [
         name: "bell gear",
         drawing: "1A",
         number: 13,
-        price: 286
+        price: 286,
+        id: 513
     },
     {
         capacity: 500,
@@ -138,7 +150,8 @@ export default [
         name: "reduction gear aluminium cover",
         drawing: "1A",
         number: 14,
-        price: 145
+        price: 145,
+        id: 514
     },
     {
         capacity: 500,
@@ -148,7 +161,8 @@ export default [
         name: "complete clutch system",
         drawing: "1A",
         number: 15,
-        price: 25
+        price: 25,
+        id: 515
     },
     {
         capacity: 500,
@@ -158,7 +172,8 @@ export default [
         name: "reduction gear aluminium cover",
         drawing: "1A",
         number: 16,
-        price: 125
+        price: 125,
+        id: 516
     },
     {
         capacity: 500,
@@ -168,7 +183,8 @@ export default [
         name: "complete bottom block",
         drawing: "1A",
         number: 17,
-        price: 28
+        price: 28,
+        id: 517
     },
     {
         capacity: 500,
@@ -178,7 +194,8 @@ export default [
         name: "pendant cable",
         drawing: "1A",
         number: 18,
-        price: 5
+        price: 5,
+        id: 518
     },
     {
         capacity: 500,
@@ -188,7 +205,8 @@ export default [
         name: "pendant",
         drawing: "1A",
         number: 19,
-        price: 68
+        price: 68,
+        id: 519
     },
     {
         capacity: 1000,
@@ -198,7 +216,8 @@ export default [
         name: "aluminium panel cover",
         drawing: "2A",
         number: 1,
-        price: 120
+        price: 120,
+        id: 10001
 
     },
     {
@@ -209,7 +228,8 @@ export default [
         name: "electrical panel L.T. 24V",
         drawing: "2A",
         number: 2,
-        price: 36
+        price: 36,
+        id: 10002
     },
     {
         capacity: 1000,
@@ -219,7 +239,8 @@ export default [
         name: "electric aluminium reduction gear flange",
         drawing: "2A",
         number: 3,
-        price: 135
+        price: 135,
+        id: 10003
     },
     {
         capacity: 1000,
@@ -229,7 +250,8 @@ export default [
         name: "pinion",
         drawing: "2A",
         number: 4,
-        price: 235
+        price: 235,
+        id: 10004
     },
     {
         capacity: 1000,
@@ -239,7 +261,8 @@ export default [
         name: "clutch gear",
         drawing: "2A",
         number: 5,
-        price: 185
+        price: 185,
+        id: 10005
     },
     {
         capacity: 1000,
@@ -249,7 +272,8 @@ export default [
         name: "gear pinion clutch",
         drawing: "2A",
         number: 6,
-        price: 199
+        price: 199,
+        id: 10006
     },
     {
         capacity: 1000,
@@ -259,7 +283,8 @@ export default [
         name: "complete clutch system",
         drawing: "2A",
         number: 7,
-        price: 269
+        price: 269,
+        id: 10007
     },
     {
         capacity: 1000,
@@ -269,7 +294,8 @@ export default [
         name: "flange double gear",
         drawing: "2A",
         number: 8,
-        price: 59
+        price: 59,
+        id: 10008
     },
     {
         capacity: 1000,
@@ -279,7 +305,8 @@ export default [
         name: "double gear",
         drawing: "2A",
         number: 9,
-        price: 159
+        price: 159,
+        id: 10009
     },
     {
         capacity: 1000,
@@ -289,7 +316,8 @@ export default [
         name: "chain sprocket",
         drawing: "2A",
         number: 10,
-        price: 66
+        price: 66,
+        id: 10010
     },
     {
         capacity: 1000,
@@ -299,7 +327,8 @@ export default [
         name: "aluminium central body",
         drawing: "2A",
         number: 11,
-        price: 86
+        price: 86,
+        id: 10011
     },
     {
         capacity: 1000,
@@ -309,7 +338,8 @@ export default [
         name: "eyebolt suspension",
         drawing: "2A",
         number: 12,
-        price: 286
+        price: 286,
+        id: 10012
     },
     {
         capacity: 1000,
@@ -319,7 +349,8 @@ export default [
         name: "motor shaft",
         drawing: "2A",
         number: 13,
-        price: 286
+        price: 286,
+        id: 10013
     },
     {
         capacity: 1000,
@@ -329,7 +360,8 @@ export default [
         name: "stator complete of aluminium case",
         drawing: "2A",
         number: 14,
-        price: 145
+        price: 145,
+        id: 10014
     },
     {
         capacity: 1000,
@@ -339,7 +371,8 @@ export default [
         name: "brake disc",
         drawing: "2A",
         number: 15,
-        price: 25
+        price: 25,
+        id: 10015
     },
     {
         capacity: 1000,
@@ -349,7 +382,8 @@ export default [
         name: "electromagnet brake AC4",
         drawing: "2A",
         number: 16,
-        price: 125
+        price: 125,
+        id: 10016
     },
     {
         capacity: 1000,
@@ -359,7 +393,8 @@ export default [
         name: "aluminium brake cover",
         drawing: "2A",
         number: 17,
-        price: 28
+        price: 28,
+        id: 10017
     },
     {
         capacity: 1000,
@@ -369,7 +404,8 @@ export default [
         name: "upper/ lower limits switch",
         drawing: "2A",
         number: 18,
-        price: 5
+        price: 5,
+        id: 10018
     },
     {
         capacity: 1000,
@@ -379,6 +415,7 @@ export default [
         name: "complete bottom block",
         drawing: "2A",
         number: 19,
-        price: 68
+        price: 68,
+        id: 10019
     }
 ]
