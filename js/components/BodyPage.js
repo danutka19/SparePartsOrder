@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react";
 
-export const BodyPage = ({drawingP, capacityP}) => {
+export const BodyPage = ({drawingP, capacityP, addToBasket}) => {
     const [photo, setPhoto] = useState([
         {
         drawing: "1A",
@@ -20,46 +20,47 @@ export const BodyPage = ({drawingP, capacityP}) => {
         }
     ]);
     const [capacity, setCapacity] = useState(capacityP);
-    const [number, setNumber] = useState("");
-    const [drawing, setDrawing] = useState(drawingP);
+    const [number, setNumber] = useState([]);
+    // const [numberX, setNumberX] = useState("");
 
-    useEffect(() => {
-        if (capacity <= 500 && capacity > 0 ) {
-            setDrawing("1A")
-        } else if (capacity <= 2000 && capacity > 500 && capacity !== 0) {
-            setDrawing("2A")
-        } else if (capacity <= 5000 && capacity > 2000 ) {
-            setDrawing("3A")
-        } else if (capacity === 0 ) {
-            setDrawing("4B")
-        } else if (capacity > 5000 ) {
-            console.warn("Podaj udźwig pomiędzy 125kg a 5000kg")
-            prompt("Please change capacity max 5000kg")
-        }
-    }, [])
+    // useEffect(() => {
+    //     console.log(`BodyPage, useEffect: ${number}`)
+    // }, [])
 
     const handleBasketBtn = (e) => {
         e.preventDefault();
-        setCapacity(capacityP);
-        // setDrawing(drawingP);
+        // setNumberX(prev => [...prev, number])
+        setNumber(e.target.value)
+        addToBasket(number);
         console.log(capacity);
-        console.log(drawing);
+        console.log(drawingP);
+        console.log(`BodyPage: ${number}`);
+        // console.log(numberX);
     }
 
-    const handleInpNumber = (e) => {
-        setNumber(e.target.value)
-        console.log(number)
-    }
+    // const handleInpNumber = (e) => {
+    //     setNumber(e.target.value)
+    // }
 
     return (
-        <form className={drawing === 0 ? "hidden" : "form"}>
-            <label>Write part of number:
-                <input type="text" value={number} onChange={handleInpNumber} placeholder="e.g. 5"/>
-            </label>
-            {photo.filter((photo) => drawing === photo.drawing)
-                .map((photo) => <img src={photo.path} alt="" key={photo.drawing}/>)}
-            <button onClick={handleBasketBtn}
-                    >Add to basket</button>
-        </form>
+        <>
+            <form className={drawingP === 0 ? "hidden" : "form"}
+                  onSubmit={e => handleBasketBtn(e)}>
+                <label>Write part of number:
+                    <input type="text"
+                           placeholder="e.g. 5"
+                           maxLength={2}
+                           value={number}
+                           onChange={e => setNumber(e.target.value)}
+                    />
+                </label>
+                <button>Add to basket</button>
+                {photo.filter((photo) => drawingP === photo.drawing)
+                    .map((photo) => <img src={photo.path} alt="" key={photo.drawing}/>)}
+
+            </form>
+
+
+        </>
     )
 }

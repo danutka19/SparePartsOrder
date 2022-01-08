@@ -17,7 +17,6 @@ const HoistPage = ({onNewCapacity}) => {
         onNewCapacity(capacityInput, setDrawingNumber());
         console.log(`zwrot z formularza w HoistPage ${setDrawingNumber()} oraz ${capacityInput}`)
         navigate('/drawing')
-
     }
 // wybiera nr rysunku, która ma sie pokazać w BodyPage i jakie pozycje nr części do FormOrder
     const setDrawingNumber = () => {

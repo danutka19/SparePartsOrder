@@ -10,7 +10,7 @@ const App = () => {
     const [capacityX, setCapacityX] = useState(500);
     const [drawing, setDrawing] = useState("1A");
     const [spares, setSpares] = useState([]);
-    const [number, setNumber] = useState("");
+    const [number, setNumber] = useState([]);
     const [type, setType] = useState("");
 
     useEffect(() => {
@@ -32,6 +32,12 @@ const App = () => {
         console.log(`addNewCapacity ${capacity}`);
     }
 
+    const onNewNumber = (number) => {
+        console.log(`BodyPageFunction`)
+        setNumber(prev => [...prev, number]);
+        console.log(`app: ${number}`)
+    }
+
     return (
         <>
             <nav style={{display: "flex", justifyContent: "center"}}>
@@ -47,8 +53,8 @@ const App = () => {
             </nav>
             <Routes>
                 <Route path="/" element={<HoistPage onNewCapacity={addNewCapacity} />} />
-                <Route path="drawing" element={<BodyPage drawingP={drawing} capacityP={capacityX} />} />
-                <Route path="order" element={<FormOrder sparesP={spares} />} />
+                <Route path="drawing" element={<BodyPage drawingP={drawing} capacityP={capacityX} addToBasket={onNewNumber} />} />
+                <Route path="order" element={<FormOrder sparesP={spares} numberP={number}/>} />
             </Routes>
         </>
     )

@@ -53,7 +53,6 @@ export const FormOrder = ({sparesP}) => {
 
     return (
         <>
-
             <table className="table">
                 <thead>
                 <tr>
@@ -78,7 +77,7 @@ export const FormOrder = ({sparesP}) => {
                                 <td>{spare.number}</td>
                                 <td>{spare.name}</td>
                                 <td>{+spare.price} <i className="fas fa-euro-sign"></i></td>
-                                <td><input type="number" min="1"
+                                <td><input type="number" min="0"
                                            placeholder="e.g. 2"
                                            className="input--quantity"
                                            value={spare.quantity}
@@ -120,7 +119,6 @@ export const FormOrder = ({sparesP}) => {
                 <div>Order value: {sum}</div>
                 <button>Send order</button>
             </form>
-
         </>
     )
 }
