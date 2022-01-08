@@ -8,8 +8,8 @@ export default [
         drawing: "3A",
         number: 1,
         price: 120,
-        id: 3001
-
+        id: 3001,
+        quantity: 1
     },
     {
         capacity: 3000,
@@ -20,7 +20,8 @@ export default [
         drawing: "3A",
         number: 2,
         price: 360,
-        id: 3002
+        id: 3002,
+        quantity: 1
     },
     {
         capacity: 3000,
@@ -31,7 +32,8 @@ export default [
         drawing: "3A",
         number: 3,
         price: 135,
-        id: 3003
+        id: 3003,
+        quantity: 1
     },
     {
         capacity: 3000,
@@ -42,7 +44,8 @@ export default [
         drawing: "3A",
         number: 4,
         price: 635,
-        id: 3004
+        id: 3004,
+        quantity: 1
     },
     {
         capacity: 3000,
@@ -53,7 +56,8 @@ export default [
         drawing: "3A",
         number: 5,
         price: 85,
-        id: 3005
+        id: 3005,
+        quantity: 1
     },
     {
         capacity: 3000,
@@ -64,7 +68,8 @@ export default [
         drawing: "3A",
         number: 6,
         price: 99,
-        id: 3006
+        id: 3006,
+        quantity: 1
     },
     {
         capacity: 3000,
@@ -75,7 +80,8 @@ export default [
         drawing: "3A",
         number: 7,
         price: 369,
-        id: 3007
+        id: 3007,
+        quantity: 1
     },
     {
         capacity: 3000,
@@ -86,7 +92,8 @@ export default [
         drawing: "3A",
         number: 8,
         price: 49,
-        id: 3008
+        id: 3008,
+        quantity: 1
     },
     {
         capacity: 3000,
@@ -97,7 +104,8 @@ export default [
         drawing: "3A",
         number: 9,
         price: 159,
-        id: 3009
+        id: 3009,
+        quantity: 1
     },
     {
         capacity: 3000,
@@ -108,7 +116,8 @@ export default [
         drawing: "3A",
         number: 10,
         price: 166,
-        id: 3010
+        id: 3010,
+        quantity: 1
     },
     {
         capacity: 3000,
@@ -119,7 +128,8 @@ export default [
         drawing: "3A",
         number: 11,
         price: 386,
-        id: 3011
+        id: 3011,
+        quantity: 1
     },
     {
         capacity: 3000,
@@ -130,7 +140,8 @@ export default [
         drawing: "3A",
         number: 12,
         price: 286,
-        id: 3012
+        id: 3012,
+        quantity: 1
     },
     {
         capacity: 3000,
@@ -141,7 +152,8 @@ export default [
         drawing: "3A",
         number: 13,
         price: 415,
-        id: 3013
+        id: 3013,
+        quantity: 1
     },
     {
         capacity: 3000,
@@ -152,7 +164,8 @@ export default [
         drawing: "3A",
         number: 14,
         price: 623,
-        id: 3014
+        id: 3014,
+        quantity: 1
     },
     {
         capacity: 3000,
@@ -163,7 +176,8 @@ export default [
         drawing: "3A",
         number: 15,
         price: 85,
-        id: 3015
+        id: 3015,
+        quantity: 1
     },
     {
         capacity: 3000,
@@ -174,7 +188,8 @@ export default [
         drawing: "3A",
         number: 16,
         price: 225,
-        id: 3016
+        id: 3016,
+        quantity: 1
     },
     {
         capacity: 3000,
@@ -185,7 +200,8 @@ export default [
         drawing: "3A",
         number: 17,
         price: 158,
-        id: 3017
+        id: 3017,
+        quantity: 1
     },
     {
         capacity: 3000,
@@ -196,7 +212,8 @@ export default [
         drawing: "3A",
         number: 18,
         price: 395,
-        id: 3018
+        id: 3018,
+        quantity: 1
     },
     {
         capacity: 3000,
@@ -207,7 +224,8 @@ export default [
         drawing: "3A",
         number: 19,
         price: 175,
-        id: 3019
+        id: 3019,
+        quantity: 1
     },
     {
         capacity: 3000,
@@ -218,7 +236,8 @@ export default [
         drawing: "3A",
         number: 20,
         price: 275,
-        id: 3020
+        id: 3020,
+        quantity: 1
     },
     {
         capacity: 3000,
@@ -229,7 +248,8 @@ export default [
         drawing: "3A",
         number: 21,
         price: 7,
-        id: 3021
+        id: 3021,
+        quantity: 1
     },
     {
         capacity: 3000,
@@ -240,7 +260,8 @@ export default [
         drawing: "3A",
         number: 22,
         price: 87,
-        id: 3022
+        id: 3022,
+        quantity: 1
     },
     {
         capacity: 3000,
@@ -251,7 +272,8 @@ export default [
         drawing: "3A",
         number: 23,
         price: 95,
-        id: 3023
+        id: 3023,
+        quantity: 1
     },
     {
         capacity: 3000,
@@ -262,7 +284,8 @@ export default [
         drawing: "3A",
         number: 24,
         price: 35,
-        id: 3024
+        id: 3024,
+        quantity: 1
     },
     {
         capacity: 3000,
@@ -273,7 +296,8 @@ export default [
         drawing: "3A",
         number: 25,
         price: 87,
-        id: 3025
+        id: 3025,
+        quantity: 1
     },
     {
         capacity: 3000,
@@ -284,7 +308,8 @@ export default [
         drawing: "3A",
         number: 26,
         price: 135,
-        id: 3026
+        id: 3026,
+        quantity: 1
     },
     {
         capacity: 3000,
@@ -295,7 +320,8 @@ export default [
         drawing: "3A",
         number: 27,
         price: 225,
-        id: 3027
+        id: 3027,
+        quantity: 1
     },
     {
         capacity: 4000,
@@ -306,8 +332,8 @@ export default [
         drawing: "3A",
         number: 1,
         price: 120,
-        id: 4001
-
+        id: 4001,
+        quantity: 1
     },
     {
         capacity: 4000,
@@ -318,7 +344,8 @@ export default [
         drawing: "3A",
         number: 2,
         price: 360,
-        id: 4002
+        id: 4002,
+        quantity: 1
     },
     {
         capacity: 4000,
@@ -329,7 +356,8 @@ export default [
         drawing: "3A",
         number: 3,
         price: 135,
-        id: 4003
+        id: 4003,
+        quantity: 1
     },
     {
         capacity: 4000,
@@ -340,7 +368,8 @@ export default [
         drawing: "3A",
         number: 4,
         price: 635,
-        id: 4004
+        id: 4004,
+        quantity: 1
     },
     {
         capacity: 4000,
@@ -351,7 +380,8 @@ export default [
         drawing: "3A",
         number: 5,
         price: 85,
-        id: 4005
+        id: 4005,
+        quantity: 1
     },
     {
         capacity: 4000,
@@ -362,7 +392,8 @@ export default [
         drawing: "3A",
         number: 6,
         price: 99,
-        id: 4006
+        id: 4006,
+        quantity: 1
     },
     {
         capacity: 4000,
@@ -373,7 +404,8 @@ export default [
         drawing: "3A",
         number: 7,
         price: 369,
-        id: 4007
+        id: 4007,
+        quantity: 1
     },
     {
         capacity: 4000,
@@ -384,7 +416,8 @@ export default [
         drawing: "3A",
         number: 8,
         price: 49,
-        id: 4008
+        id: 4008,
+        quantity: 1
     },
     {
         capacity: 4000,
@@ -395,7 +428,8 @@ export default [
         drawing: "3A",
         number: 9,
         price: 159,
-        id: 4009
+        id: 4009,
+        quantity: 1
     },
     {
         capacity: 4000,
@@ -406,7 +440,8 @@ export default [
         drawing: "3A",
         number: 10,
         price: 166,
-        id: 4010
+        id: 4010,
+        quantity: 1
     },
     {
         capacity: 4000,
@@ -417,7 +452,8 @@ export default [
         drawing: "3A",
         number: 11,
         price: 386,
-        id: 4011
+        id: 4011,
+        quantity: 1
     },
     {
         capacity: 4000,
@@ -428,7 +464,8 @@ export default [
         drawing: "3A",
         number: 12,
         price: 286,
-        id: 4012
+        id: 4012,
+        quantity: 1
     },
     {
         capacity: 4000,
@@ -439,7 +476,8 @@ export default [
         drawing: "3A",
         number: 13,
         price: 415,
-        id: 4013
+        id: 4013,
+        quantity: 1
     },
     {
         capacity: 4000,
@@ -450,7 +488,8 @@ export default [
         drawing: "3A",
         number: 14,
         price: 623,
-        id: 4014
+        id: 4014,
+        quantity: 1
     },
     {
         capacity: 4000,
@@ -461,7 +500,8 @@ export default [
         drawing: "3A",
         number: 15,
         price: 85,
-        id: 4015
+        id: 4015,
+        quantity: 1
     },
     {
         capacity: 4000,
@@ -472,7 +512,8 @@ export default [
         drawing: "3A",
         number: 16,
         price: 225,
-        id: 4016
+        id: 4016,
+        quantity: 1
     },
     {
         capacity: 4000,
@@ -483,7 +524,8 @@ export default [
         drawing: "3A",
         number: 17,
         price: 158,
-        id: 4017
+        id: 4017,
+        quantity: 1
     },
     {
         capacity: 4000,
@@ -494,7 +536,8 @@ export default [
         drawing: "3A",
         number: 18,
         price: 395,
-        id: 4018
+        id: 4018,
+        quantity: 1
     },
     {
         capacity: 4000,
@@ -505,7 +548,8 @@ export default [
         drawing: "3A",
         number: 19,
         price: 175,
-        id: 4019
+        id: 4019,
+        quantity: 1
     },
     {
         capacity: 4000,
@@ -516,7 +560,8 @@ export default [
         drawing: "3A",
         number: 20,
         price: 275,
-        id: 4020
+        id: 4020,
+        quantity: 1
     },
     {
         capacity: 4000,
@@ -527,7 +572,8 @@ export default [
         drawing: "3A",
         number: 21,
         price: 7,
-        id: 4021
+        id: 4021,
+        quantity: 1
     },
     {
         capacity: 4000,
@@ -538,7 +584,8 @@ export default [
         drawing: "3A",
         number: 22,
         price: 87,
-        id: 4022
+        id: 4022,
+        quantity: 1
     },
     {
         capacity: 4000,
@@ -549,7 +596,8 @@ export default [
         drawing: "3A",
         number: 23,
         price: 95,
-        id: 4023
+        id: 4023,
+        quantity: 1
     },
     {
         capacity: 4000,
@@ -560,7 +608,8 @@ export default [
         drawing: "3A",
         number: 24,
         price: 35,
-        id: 4024
+        id: 4024,
+        quantity: 1
     },
     {
         capacity: 4000,
@@ -571,7 +620,8 @@ export default [
         drawing: "3A",
         number: 25,
         price: 87,
-        id: 4025
+        id: 4025,
+        quantity: 1
     },
     {
         capacity: 4000,
@@ -582,7 +632,8 @@ export default [
         drawing: "3A",
         number: 26,
         price: 120,
-        id: 4026
+        id: 4026,
+        quantity: 1
     },
     {
         capacity: 4000,
@@ -593,6 +644,7 @@ export default [
         drawing: "3A",
         number: 27,
         price: 120,
-        id: 4027
+        id: 4027,
+        quantity: 1
     },
 ]

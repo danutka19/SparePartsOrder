@@ -8,7 +8,8 @@ export default [
         drawing: "2A",
         number: 1,
         price: 120,
-        id: 2001
+        id: 2001,
+        quantity: 1
 
     },
     {
@@ -20,7 +21,8 @@ export default [
         drawing: "2A",
         number: 2,
         price: 36,
-        id: 2002
+        id: 2002,
+        quantity: 1
     },
     {
         capacity: 2000,
@@ -31,7 +33,8 @@ export default [
         drawing: "2A",
         number: 3,
         price: 135,
-        id: 2003
+        id: 2003,
+        quantity: 1
     },
     {
         capacity: 2000,
@@ -42,7 +45,8 @@ export default [
         drawing: "2A",
         number: 4,
         price: 235,
-        id: 2004
+        id: 2004,
+        quantity: 1
     },
     {
         capacity: 2000,
@@ -53,7 +57,8 @@ export default [
         drawing: "2A",
         number: 5,
         price: 185,
-        id: 2005
+        id: 2005,
+        quantity: 1
     },
     {
         capacity: 2000,
@@ -64,7 +69,8 @@ export default [
         drawing: "2A",
         number: 6,
         price: 199,
-        id: 2006
+        id: 2006,
+        quantity: 1
     },
     {
         capacity: 2000,
@@ -75,7 +81,8 @@ export default [
         drawing: "2A",
         number: 7,
         price: 269,
-        id: 2007
+        id: 2007,
+        quantity: 1
     },
     {
         capacity: 2000,
@@ -86,7 +93,8 @@ export default [
         drawing: "2A",
         number: 8,
         price: 59,
-        id: 2008
+        id: 2008,
+        quantity: 1
     },
     {
         capacity: 2000,
@@ -97,7 +105,8 @@ export default [
         drawing: "2A",
         number: 9,
         price: 159,
-        id: 2009
+        id: 2009,
+        quantity: 1
     },
     {
         capacity: 2000,
@@ -108,7 +117,8 @@ export default [
         drawing: "2A",
         number: 10,
         price: 66,
-        id: 2010
+        id: 2010,
+        quantity: 1
     },
     {
         capacity: 2000,
@@ -119,7 +129,8 @@ export default [
         drawing: "2A",
         number: 11,
         price: 86,
-        id: 2011
+        id: 2011,
+        quantity: 1
     },
     {
         capacity: 2000,
@@ -130,7 +141,8 @@ export default [
         drawing: "2A",
         number: 12,
         price: 286,
-        id: 2012
+        id: 2012,
+        quantity: 1
     },
     {
         capacity: 2000,
@@ -141,7 +153,8 @@ export default [
         drawing: "2A",
         number: 13,
         price: 286,
-        id: 2013
+        id: 2013,
+        quantity: 1
     },
     {
         capacity: 2000,
@@ -152,7 +165,8 @@ export default [
         drawing: "2A",
         number: 14,
         price: 145,
-        id: 2014
+        id: 2014,
+        quantity: 1
     },
     {
         capacity: 2000,
@@ -163,7 +177,8 @@ export default [
         drawing: "2A",
         number: 15,
         price: 25,
-        id: 2015
+        id: 2015,
+        quantity: 1
     },
     {
         capacity: 2000,
@@ -174,7 +189,8 @@ export default [
         drawing: "2A",
         number: 16,
         price: 125,
-        id: 2016
+        id: 2016,
+        quantity: 1
     },
     {
         capacity: 2000,
@@ -185,7 +201,8 @@ export default [
         drawing: "2A",
         number: 17,
         price: 28,
-        id: 2017
+        id: 2017,
+        quantity: 1
     },
     {
         capacity: 2000,
@@ -196,7 +213,8 @@ export default [
         drawing: "2A",
         number: 18,
         price: 5,
-        id: 2018
+        id: 2018,
+        quantity: 1
     },
     {
         capacity: 2000,
@@ -207,7 +225,8 @@ export default [
         drawing: "2A",
         number: 19,
         price: 68,
-        id: 2019
+        id: 2019,
+        quantity: 1
     },
     {
         capacity: 2000,
@@ -218,7 +237,8 @@ export default [
         drawing: "2A",
         number: 20,
         price: 75,
-        id: 2020
+        id: 2020,
+        quantity: 1
     },
     {
         capacity: 2000,
@@ -229,7 +249,8 @@ export default [
         drawing: "2A",
         number: 21,
         price: 7,
-        id: 2021
+        id: 2021,
+        quantity: 1
     },
     {
         capacity: 1000,
@@ -240,8 +261,8 @@ export default [
         drawing: "2A",
         number: 1,
         price: 120,
-        id: 1001
-
+        id: 1001,
+        quantity: 1
     },
     {
         capacity: 1000,
@@ -252,7 +273,8 @@ export default [
         drawing: "2A",
         number: 2,
         price: 36,
-        id: 1002
+        id: 1002,
+        quantity: 1
     },
     {
         capacity: 1000,
@@ -263,7 +285,8 @@ export default [
         drawing: "2A",
         number: 3,
         price: 135,
-        id: 1003
+        id: 1003,
+        quantity: 1
     },
     {
         capacity: 1000,
@@ -274,7 +297,8 @@ export default [
         drawing: "2A",
         number: 4,
         price: 235,
-        id: 1004
+        id: 1004,
+        quantity: 1
     },
     {
         capacity: 1000,
@@ -285,7 +309,8 @@ export default [
         drawing: "2A",
         number: 5,
         price: 185,
-        id: 1005
+        id: 1005,
+        quantity: 1
     },
     {
         capacity: 1000,
@@ -296,7 +321,8 @@ export default [
         drawing: "2A",
         number: 6,
         price: 199,
-        id: 1006
+        id: 1006,
+        quantity: 1
     },
     {
         capacity: 1000,
@@ -307,7 +333,8 @@ export default [
         drawing: "2A",
         number: 7,
         price: 269,
-        id: 1007
+        id: 1007,
+        quantity: 1
     },
     {
         capacity: 1000,
@@ -318,7 +345,8 @@ export default [
         drawing: "2A",
         number: 8,
         price: 59,
-        id: 1008
+        id: 1008,
+        quantity: 1
     },
     {
         capacity: 1000,
@@ -329,7 +357,8 @@ export default [
         drawing: "2A",
         number: 9,
         price: 159,
-        id: 1009
+        id: 1009,
+        quantity: 1
     },
     {
         capacity: 1000,
@@ -340,7 +369,8 @@ export default [
         drawing: "2A",
         number: 10,
         price: 66,
-        id: 1010
+        id: 1010,
+        quantity: 1
     },
     {
         capacity: 1000,
@@ -351,7 +381,8 @@ export default [
         drawing: "2A",
         number: 11,
         price: 86,
-        id: 1011
+        id: 1011,
+        quantity: 1
     },
     {
         capacity: 1000,
@@ -362,7 +393,8 @@ export default [
         drawing: "2A",
         number: 12,
         price: 286,
-        id: 1012
+        id: 1012,
+        quantity: 1
     },
     {
         capacity: 1000,
@@ -373,7 +405,8 @@ export default [
         drawing: "2A",
         number: 13,
         price: 286,
-        id: 1013
+        id: 1013,
+        quantity: 1
     },
     {
         capacity: 1000,
@@ -384,7 +417,8 @@ export default [
         drawing: "2A",
         number: 14,
         price: 145,
-        id: 1014
+        id: 1014,
+        quantity: 1
     },
     {
         capacity: 1000,
@@ -395,7 +429,8 @@ export default [
         drawing: "2A",
         number: 15,
         price: 25,
-        id: 1015
+        id: 1015,
+        quantity: 1
     },
     {
         capacity: 1000,
@@ -406,7 +441,8 @@ export default [
         drawing: "2A",
         number: 16,
         price: 125,
-        id: 1016
+        id: 1016,
+        quantity: 1
     },
     {
         capacity: 1000,
@@ -417,7 +453,8 @@ export default [
         drawing: "2A",
         number: 17,
         price: 28,
-        id: 1017
+        id: 1017,
+        quantity: 1
     },
     {
         capacity: 1000,
@@ -428,7 +465,8 @@ export default [
         drawing: "2A",
         number: 18,
         price: 5,
-        id: 1018
+        id: 1018,
+        quantity: 1
     },
     {
         capacity: 1000,
@@ -439,7 +477,8 @@ export default [
         drawing: "2A",
         number: 19,
         price: 68,
-        id: 1019
+        id: 1019,
+        quantity: 1
     },
     {
         capacity: 1000,
@@ -450,7 +489,8 @@ export default [
         drawing: "2A",
         number: 20,
         price: 75,
-        id: 1020
+        id: 1020,
+        quantity: 1
     },
     {
         capacity: 1000,
