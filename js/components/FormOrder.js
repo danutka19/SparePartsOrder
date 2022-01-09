@@ -1,12 +1,13 @@
 import React, {Component, useEffect, useState} from "react";
 import {FetchCurrency} from "./FetchCurrency";
 
-export const FormOrder = ({sparesP}) => {
-    const [spares, setSpares] = useState(sparesP)
-    const [sum, setSum] = useState("")
-    const [serialNumber, setSerialNumber] = useState("")
-    const [currency, setCurrency] = useState(4.57)//tu stan i funcDoZmiany
-    const [statusOrder, setStatusOrder] = useState(false)
+export const FormOrder = ({sparesP, numbersP}) => {
+    const [spares, setSpares] = useState(sparesP);
+    const [numbers, setNumbers] = useState(numbersP);
+    const [sum, setSum] = useState("");
+    const [serialNumber, setSerialNumber] = useState("");
+    const [currency, setCurrency] = useState(4.57); //tu stan i funcDoZmiany
+    const [statusOrder, setStatusOrder] = useState(false);
 
     useEffect(() => {
         setSum(spares

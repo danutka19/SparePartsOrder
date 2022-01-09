@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from "react";
+import {useNavigate} from 'react-router-dom'
 
 export const BodyPage = ({drawingP, capacityP, addToBasket}) => {
     const [photo, setPhoto] = useState([
@@ -21,26 +22,40 @@ export const BodyPage = ({drawingP, capacityP, addToBasket}) => {
     ]);
     const [capacity, setCapacity] = useState(capacityP);
     const [number, setNumber] = useState([]);
-    // const [numberX, setNumberX] = useState("");
+    const [numberArray, setNumberArray] = useState([]);
 
-    // useEffect(() => {
-    //     console.log(`BodyPage, useEffect: ${number}`)
-    // }, [])
+    const navigate = useNavigate();
+
+    useEffect(() => {
+        // console.log(`BodyPage, useEffect, numberArray: ${numberArray}`)
+        // setNumberArray(prev => [...prev, number])
+    }, [])
 
     const handleBasketBtn = (e) => {
         e.preventDefault();
-        // setNumberX(prev => [...prev, number])
-        setNumber(e.target.value)
-        addToBasket(number);
+        // setNumberArray((prev) => [...prev, number])
+        addToBasket(numberArray);
         console.log(capacity);
         console.log(drawingP);
-        console.log(`BodyPage: ${number}`);
-        // console.log(numberX);
+        console.log(`BodyPage, handleBasketBtn, number: ${number}`);
+        console.log(`BodyPage, handleBasketBtn, numberArray: ${numberArray}`);
+        navigate('/order');
     }
 
-    // const handleInpNumber = (e) => {
-    //     setNumber(e.target.value)
-    // }
+    const addNumbers = (e) => {
+        e.preventDefault();
+        setNumberArray((prev) => [...prev, number])
+    }
+
+    const handleInpNumber = (e) => {
+        setNumber(e.target.value)
+    }
+
+    const clearBtn = (e) => {
+        e.preventDefault()
+        setNumber(0);
+        setNumberArray([]);
+    }
 
     return (
         <>
@@ -51,16 +66,18 @@ export const BodyPage = ({drawingP, capacityP, addToBasket}) => {
                            placeholder="e.g. 5"
                            maxLength={2}
                            value={number}
-                           onChange={e => setNumber(e.target.value)}
+                           onChange={handleInpNumber}
                     />
                 </label>
+                <button onClick={e => addNumbers(e)}>Add number of spare parts</button>
+                <div>Numbers of spare parts to order:
+                    <p>{numberArray.map((el, index) => `${el}, `)} </p>
+                </div>
+                <button onClick={e => clearBtn(e)}>Clear basket</button>
                 <button>Add to basket</button>
                 {photo.filter((photo) => drawingP === photo.drawing)
                     .map((photo) => <img src={photo.path} alt="" key={photo.drawing}/>)}
-
             </form>
-
-
         </>
     )
 }
