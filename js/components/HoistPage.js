@@ -8,17 +8,18 @@ const HoistPage = ({onNewCapacity}) => {
     const [typeInput, setTypeInput] = useState("");
     const [powerInput, setPowerInput] = useState("");
     const [suspensionInput, setSuspensionInput] = useState("CS");
-    const navigate = useNavigate()
+    const navigate = useNavigate();
     const [bodyInput, setBodyInput] = useState(true); // body=true trolley=false, potem wyswietli odpowiedni rysunek body/trolley, domyslnie body
 
-    const handleBtn = (e) => {
+    // funkcja wysyłająca capacity (udźwig) oraz drawing (nr rysunku)
+    const handleForm = (e) => {
         e.preventDefault();
         setBodyInput(true);
         onNewCapacity(capacityInput, setDrawingNumber());
         console.log(`zwrot z formularza w HoistPage ${setDrawingNumber()} oraz ${capacityInput}`)
         navigate('/drawing')
     }
-// wybiera nr rysunku, która ma sie pokazać w BodyPage i jakie pozycje nr części do FormOrder
+    // wybiera nr rysunku, która ma sie pokazać w BodyPage i jakie pozycje nr części do FormOrder
     const setDrawingNumber = () => {
         if (capacityInput <= 500 && capacityInput > 0 ) {
             return "1A"
@@ -31,6 +32,10 @@ const HoistPage = ({onNewCapacity}) => {
         } else if (capacityInput > 5000 ) {
             console.warn("Podaj udźwig pomiędzy 125kg a 5000kg")
         }
+    }
+
+    const setSpares = (number) => {
+
     }
 
     const clearBtn = (e) => {
@@ -52,7 +57,7 @@ const HoistPage = ({onNewCapacity}) => {
             <div >
                 <h3>Choose your chain hoist:</h3>
                 <p>Please fill below datas to find neccessary spare(s)</p>
-                <form action="" className="form" onSubmit={handleBtn}>
+                <form action="" className="form" onSubmit={handleForm}>
                     <label>Capacity:
                         <input type="text" onChange={e => setCapacityInput(e.target.value)} value={capacityInput} placeholder="e.g. 500" />[kg]
                     </label>

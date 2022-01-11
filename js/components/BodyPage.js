@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from "react";
 import {useNavigate} from 'react-router-dom'
+import {sparesParts} from "../data/datas";
 
 export const BodyPage = ({drawingP, capacityP, addToBasket}) => {
     const [photo, setPhoto] = useState([
@@ -19,10 +20,10 @@ export const BodyPage = ({drawingP, capacityP, addToBasket}) => {
         drawing: "4B",
         path: "js/data/photo/trolley 4.jpg"
         }
-    ]);
-    const [capacity, setCapacity] = useState(capacityP);
-    const [number, setNumber] = useState([]);
-    const [numberArray, setNumberArray] = useState([]);
+    ]); // potrzebne do pokazania zdjęcia
+    const [number, setNumber] = useState(""); // chwilowy stan inputa z nr części
+    const [numberArray, setNumberArray] = useState([]); // dodaje i pokazuje numer części
+    const [sparesList, setSparesList] = useState([]);  // stan wysyłany w górę, w którym chcę umieścić listę zamawianych części
 
     const navigate = useNavigate();
 
@@ -31,20 +32,24 @@ export const BodyPage = ({drawingP, capacityP, addToBasket}) => {
         // setNumberArray(prev => [...prev, number])
     }, [])
 
-    const handleBasketBtn = (e) => {
+    // funkcja wysyłająca tablicę części zamiennych do FormOrder, na razie wysyła tablicę z numerami tychże części
+    const handleBasketForm = (e) => {
         e.preventDefault();
-        // setNumberArray((prev) => [...prev, number])
-        addToBasket(numberArray);
-        console.log(capacity);
-        console.log(drawingP);
-        console.log(`BodyPage, handleBasketBtn, number: ${number}`);
-        console.log(`BodyPage, handleBasketBtn, numberArray: ${numberArray}`);
+        addToBasket(sparesList);
+        console.log(`BodyPage, handleBasketForm, sparesList: ${sparesList}`);
         navigate('/order');
     }
 
     const addNumbers = (e) => {
         e.preventDefault();
-        setNumberArray((prev) => [...prev, number])
+        setNumberArray((prev) => [...prev, number]);
+        const spare = (sparesParts
+            .filter(spares => spares.drawing === drawingP && spares.number === +number && spares.capacity === +capacityP))[0]
+        setSparesList(prev => [...prev, sparesParts
+            .filter(spares =>
+                spares.drawing === drawingP &&
+                spares.number === +number &&
+                spares.capacity === +capacityP)[0]]);
     }
 
     const handleInpNumber = (e) => {
@@ -60,7 +65,7 @@ export const BodyPage = ({drawingP, capacityP, addToBasket}) => {
     return (
         <>
             <form className={drawingP === 0 ? "hidden" : "form"}
-                  onSubmit={e => handleBasketBtn(e)}>
+                  onSubmit={e => handleBasketForm(e)}>
                 <label>Write part of number:
                     <input type="text"
                            placeholder="e.g. 5"
@@ -71,7 +76,7 @@ export const BodyPage = ({drawingP, capacityP, addToBasket}) => {
                 </label>
                 <button onClick={e => addNumbers(e)}>Add number of spare parts</button>
                 <div>Numbers of spare parts to order:
-                    <p>{numberArray.map((el, index) => `${el}, `)} </p>
+                    <p>{numberArray.join(`, `)} </p>
                 </div>
                 <button onClick={e => clearBtn(e)}>Clear basket</button>
                 <button>Add to basket</button>
