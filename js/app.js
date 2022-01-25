@@ -7,21 +7,15 @@ import { Routes, Route, Link, BrowserRouter } from "react-router-dom";
 import { sparesParts} from "./data/datas";
 
 const App = () => {
-    const [capacityX, setCapacityX] = useState(500);
-    const [drawing, setDrawing] = useState("1A");
+    const [capacityX, setCapacityX] = useState("");
+    const [drawing, setDrawing] = useState("");
     const [spares, setSpares] = useState([]);
     const [numbers, setNumbers] = useState([]);
     const [type, setType] = useState("");
 
     useEffect(() => {
-        setSpares(sparesParts.filter(spares => {
-            return spares.drawing === drawing && spares.capacity === +capacityX
-        }));
+        setSpares(sparesParts.filter(({drawing: drawVal,capacity}) => drawVal === drawing && capacity === +capacityX));
     }, [capacityX, drawing, numbers])
-
-    useEffect(() => {
-        console.log(`useEffect, app, spares: `, spares);
-    }, [spares])
 
     const addNewCapacity = (capacity, drawing) => {
         setCapacityX(capacity);
@@ -39,16 +33,16 @@ const App = () => {
                     <i className="fa fa-home" aria-hidden="true">home</i>
                 </Link>
                 <Link className="navigation" to="/drawing">
-                    <i className="fas fa-book-open" aria-hidden="true"></i>
+                    <i className="fas fa-book-open" aria-hidden="true" />
                 </Link>
                 <Link className="navigation" to="/order">
-                    <i className="fa fa-shopping-basket" aria-hidden="true"></i>
+                    <i className="fa fa-shopping-basket" aria-hidden="true" />
                 </Link>
             </nav>
             <Routes>
                 <Route path="/" element={<HoistPage onNewCapacity={addNewCapacity} />} />
                 <Route path="drawing" element={<BodyPage drawingP={drawing} capacityP={capacityX} addToBasket={onNewNumbers} />} />
-                <Route path="order" element={<FormOrder sparesP={spares} />} />
+                <Route path="order" element={<FormOrder drawingP={drawing} sparesP={spares} />} />
             </Routes>
         </>
     )

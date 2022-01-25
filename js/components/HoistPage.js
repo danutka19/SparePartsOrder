@@ -11,7 +11,7 @@ const HoistPage = ({onNewCapacity}) => {
     const navigate = useNavigate();
     const [bodyInput, setBodyInput] = useState(true); // body=true trolley=false, potem wyswietli odpowiedni rysunek body/trolley, domyslnie body
 
-    // funkcja wysyłająca capacity (udźwig) oraz drawing (nr rysunku)
+    // sending capacity and drawing
     const handleForm = (e) => {
         e.preventDefault();
         setBodyInput(true);
@@ -19,7 +19,7 @@ const HoistPage = ({onNewCapacity}) => {
         console.log(`zwrot z formularza w HoistPage ${setDrawingNumber()} oraz ${capacityInput}`)
         navigate('/drawing')
     }
-    // wybiera nr rysunku, która ma sie pokazać w BodyPage i jakie pozycje nr części do FormOrder
+    // set number of drawing (which should show in BodyPage)
     const setDrawingNumber = () => {
         if (capacityInput <= 500 && capacityInput > 0 ) {
             return "1A"
@@ -32,10 +32,6 @@ const HoistPage = ({onNewCapacity}) => {
         } else if (capacityInput > 5000 ) {
             console.warn("Podaj udźwig pomiędzy 125kg a 5000kg")
         }
-    }
-
-    const setSpares = (number) => {
-
     }
 
     const clearBtn = (e) => {
@@ -86,7 +82,6 @@ const HoistPage = ({onNewCapacity}) => {
                     <button onClick={clearBtn}>Clear form</button>
                 </form>
             </div>
-
         </>
     )
 }
