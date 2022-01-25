@@ -1,9 +1,7 @@
 import React, {useState, useEffect} from "react";
-import {createHoist} from "../data/createHoist";
-import {sparesParts} from "../data/datas";
 import {useNavigate} from 'react-router-dom'
 
-const HoistPage = ({onNewCapacity}) => {
+export const HoistPage = ({onNewCapacity}) => {
     const [capacityInput, setCapacityInput] = useState("");
     const [typeInput, setTypeInput] = useState("");
     const [powerInput, setPowerInput] = useState("");
@@ -85,4 +83,3 @@ const HoistPage = ({onNewCapacity}) => {
         </>
     )
 }
-export default HoistPage;

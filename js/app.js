@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from "react";
 import ReactDOM from "react-dom";
 import {FormOrder} from "./components/FormOrder";
-import HoistPage from "./components/HoistPage";
+import {HoistPage} from "./components/HoistPage";
 import {BodyPage} from "./components/BodyPage";
 import { Routes, Route, Link, BrowserRouter } from "react-router-dom";
 import { sparesParts} from "./data/datas";
