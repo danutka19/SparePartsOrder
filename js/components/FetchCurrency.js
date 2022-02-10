@@ -1,8 +1,8 @@
 import {useEffect, useState} from "react";
 import React from "react";
 
-const API = `http://api.nbp.pl/api/exchangerates/rates/A/EUR/2022-01-25/`
-// const API = `http://api.nbp.pl/api/exchangerates/rates/A/EUR/`
+// const API = `http://api.nbp.pl/api/exchangerates/rates/A/EUR/2022-01-25/`
+const API = `http://api.nbp.pl/api/exchangerates/rates/A/EUR/`
 // const API = `http://api.nbp.pl/api/exchangerates/rates/A/EUR/today/`
 
 export const FetchCurrency = ({fooP}) => {
